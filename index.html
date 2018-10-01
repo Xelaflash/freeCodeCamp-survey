@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <title>freeCodeCamp - Survey Form</title>
+</head>
+<body>
+
+  <div class="container survey-page text-center">
+    <h1 id="title">Fake customer survey</h1>
+    <p id="description">Let us know about your dev habits</p>
+    <hr>
+    <form id="survey-form">
+      <div class="text-input">
+        <label id="name-label" for="name">Name : </label>
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+        <br>
+        <label id="email-label" for="email">Email : </label>
+          <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+          <br>
+          <label id="number-label" for="age">Age :</label>
+          <input type="number" id="number" name="age" placeholder="from 0 to 100" step="1" min="0" max="100" />
+      </div>
+        <br>
+        <label for="current-tech">Which tech are you using?</label>
+        <select id="dropdown">
+          <option value="ruby">Ruby</option>
+          <option value="js">Javascript</option>
+          <option value="java">Java</option>
+          <option value="python">Python</option>
+        </select>
+        <br>
+        <div class="user-level">
+          <label for="current-knowledge">What is your level?</label>
+          <label for="beginner">Beginner</label>
+            <input type="radio" id="beginner" name="level" value="beginner" checked />
+          <label for="intermediate">Intermediate</label>
+            <input type="radio" id="intermediate" name="level" value="intermediate" />
+          <label for="advanced">Advanced</label>
+            <input type="radio" id="advanced" name="level" value="advanced" />
+        </div>
+        <br>
+        <div>
+          <label for="habit">Why are you coding?</label>
+          <label for="hobby">Hobby</label>
+          <input type="checkbox" id="hobby" name="habit" value="hobby"/>
+          <label for="work">Work</label>
+          <input type="checkbox" id="work" name="habit" value="work"/>
+          <label for="other">Other</label>
+          <input type="checkbox" id="other" name="habit" value="other"/>
+        </div>
+
+        <br>
+        <label for="comments">Any Comments?</label>
+        <textarea id="comments" class="input-field"  name="comment" placeholder="Enter your comment here..."></textarea>
+        <br><br><br>
+        <button id="submit" class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
